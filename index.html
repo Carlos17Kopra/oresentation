@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmiersprachenübersicht</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section id="welcome">
+            <div class="welcome__content">
+                <h2 class="welcome__head hidden">Willkommen zu unserer Präsentation!</h2>
+                <button class="hidden" onclick="doScroll('#type-desc')">Los gehts!</button>
+            </div>
+        </section>
+        <section id="type-desc">        
+            <div class="type-description">
+                    <h1 class="hidden">Was gibt es für Programmierprinzipien?</h1>
+                    <div class="description">
+                        <h2 class="hidden">Imperative Programmierung</h2>
+                        <ul class="hidden">
+                            <li class="hidden">
+                                Programm wird mit Quellcode gesagt, was es tun soll
+                            </li>
+                            <li class="hidden">
+                                Programm wird strikt von oben nach unten ausgeführt
+                            </li>
+                            <li class="hidden">
+                                Kann innerhalb von Funktionen springen
+                            </li>
+                            <li class="hidden">
+                                Algorithmen können entworfen werden
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h2 class="hidden">Deskriptive Programmierung</h2>
+                        <ul class="hidden">
+                            <li class="hidden">
+                                Nutzer gibt lediglich Befehl zum Lösen von Problemen an
+                                <small>Keine eigenen Algorithmen Möglich</small>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="description">
+                    <h2 class="hidden">Prozeduale Programmierung</h2>
+                    <ul>
+                        <li class="hidden">
+                            Programmierung ohne Objekte
+                            <small>Unterteilung in Funktionen möglich, jedoch nicht zwingend.</small>
+                        </li>
+                        <li class="hidden">
+                            Keine Vererbung
+                        </li>
+                        <li class="hidden">
+                            Einfacher zu schreiben, schwerer zu warten
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h2 class="hidden">Objektorientierte Programmierung</h2>
+                    <ul>
+                        <li class="hidden">
+                            Unterteilung in Objekte (teilweise Funktionen, siehe PHP, JavaScript) möglich
+                        </li>
+                        <li class="hidden">
+                            Prinzipien der Vererbung (implementations, extending)
+                        </li>
+                        <li class="hidden">
+                            Leichter zu warten und übersichtlicher, jedoch schwerer zu schreiben
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h2 class="hidden">Spezialsprachen</h2>
+                    <ul>
+                        <li class="hidden">
+                            Meistens keine Logik ausführbar
+                            <small>Rechnen bedingt möglich (z.B: SQL, CSS)</small>
+                        </li>
+                        <li class="hidden">
+                            Nicht als Programmiersprache zu klassifizieren
+                        </li>
+                        <li class="hidden">
+                            Meist Markup Languages (HTML, XML, SGML)
+                        </li>
+                        <li class="hidden">
+                            Programmierunterstützend
+                            <small>z.B: JSON -> Objektnotation</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="break">
+            <h2 class="hidden">Alles verstanden?</h2>
+            <button class="goForward hidden" onclick="doScroll('#languages')">Dann weiter!</button>
+        </div>
+        <section id="languages">
+            <div class="languages" class="hidden">
+                <table class="hidden">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Sprache</th>
+                            <th>imperativ</th>
+                            <th>deskriptiv</th>
+                            <th>prozedural</th>
+                            <th>objektorientiert</th>
+                            <th>Spezialsprache</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!---TO BE FILLED BY JAVASCRIPT-->
+                    </tbody>
+                </table>
+            </div>
+        </section>    
+        <div class="break">
+            <h2 class="hidden">Alles verstanden?</h2>
+            <button class="goForward hidden" onclick="doScroll('#usage')">Dann weiter!</button>
+        </div>
+        <section id="usage">        
+            <div id="cards" class="hidden">
+
+            </div>
+        </section>    
+        <div class="break">
+            <h2 class="hidden">Alles verstanden?</h2>
+            <button class="goForward hidden" onclick="doScroll('#footer')">Dann weiter!</button>
+        </div>
+        <section id="footer">
+            <footer class="hidden">
+                <div class="footer-content">
+                    <hr>
+                    <h2>Danke fürs zuhören!</h2>
+                    <h4>Made with <span class="heart" class="hidden">&#10084;</span> by Eric & Arvid</h4>
+                    <hr>
+                </div>
+            </footer>
+        </section>
+
+
+
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

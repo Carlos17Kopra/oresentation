@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+/*
+Variables   
+*/
+$midnightBlue:#0E0E52;
+$darkSkyBlue:#78C0E0;
+$carolinaBlue:#449DD1;
+$persianBlue:#192BC2;
+$navyBlue:#150578;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#welcome {
+    width: 100%;
+    height: 912px;
+    background: $persianBlue;
+}
+
+.welcome__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome__head {
+    padding-bottom: 25px;
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#welcome button {
+    padding: 10px 25px;
+    color: white;
+    background: linear-gradient(to left, $darkSkyBlue 50%, white 50%);
+    background-size: 200%;
+    background-position: right;
+    border: 1px solid $darkSkyBlue;
+    outline: none;
+    cursor: pointer;
+    transition: all .125s ease-in;
+}
+
+#welcome button:hover {
+    background-position: left;
+    color: $persianBlue;
+    padding: 10px 30px;
+    transition: all .125s ease-in;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-times {
+    color: tomato;
+}
+
+ul {
+    list-style: none;
+}
+
+//type desc
+
+#type-desc {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+#type-desc .type-description h1 {
+    padding-bottom: 25px;
+    color: $midnightBlue;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+
+#type-desc .type-description .description {
+    padding: 15px;
+}
+
+#type-desc .type-description .description h2 {
+    color: $darkSkyBlue;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#type-desc .type-description .description ul li {
+    padding: 7.5px;
+}
+
+#type-desc .type-description .description ul li small {
+    display: block;
+}
+
+#type-desc .type-description .description ul li small::before {
+    content: "» ";
+}
+
+#type-desc .type-description .description ul li small {
+    display: block;
+}
+
+
+//break
+.break {
+    background: $midnightBlue;
+    padding: 200px 0;
+}
+
+.break h2 {
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 30px
+}
+
+.break button {
+    padding: 10px 25px;
+    border: 1px solid white;
+    color: $midnightBlue;
+    background: linear-gradient(to right, $midnightBlue 50%, white 50%);
+    background-size: 200%;
+    background-position: right;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.break button:hover {
+    background-position: left;
+    color: white;
+    padding: 10px 30px;
+}
+
+//languages
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: auto;
+    box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, .5);
+    border: 1px $navyBlue solid;
+    border-radius: 8px !important;
+}
+
+thead {
+    color: white;
+    background-color: $navyBlue;
+}
+
+th {
+    padding: 15px 25px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+td {
+    padding: 15px 0;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: rgb(230, 229, 229);
+}
+
+.languages {
+    padding: 50px 0;
+}
+
+/*Cards*/
+.card {
+    width: 30%;
+    display: inline-block;
+    margin: 45px 5px;
+    background: rgb(252, 252, 252);
+    height: 250px;
+    vertical-align: top;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.cardHeader {
+    border-radius: 10px;
+    padding: 15px 0;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    color: $persianBlue;
+}
+
+.cardContent {
+    padding-top: 15px;
+    text-transform: uppercase;
+
+}
+
+//footer
+footer {
+    padding: 250px 0;
+    background: black;
+}
+
+footer hr {
+    width: 40%;
+    margin: 15px auto;
+    color: white;
+}
+
+footer h2 {
+    color: white;
+    font-weight: lighter;
+}
+
+footer h4 {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.heart {
+    color: red;
+}
+
+//animations
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateX(2.5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateX(-2.5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.left {
+    animation: 1s fadeLeft forwards;
+}
+
+.right {
+    animation: 1s fadeRight forwards;
+}
